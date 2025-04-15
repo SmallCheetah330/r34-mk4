@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toyota Supra MK4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #0d1117;
+      color: #ffffff;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1e90ff, #ff4500);
+      padding: 2rem 1rem;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      text-shadow: 2px 2px 10px #000;
+      text-transform: uppercase;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 3rem auto;
+      background-color: #161b22;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #ff4500;
+      text-align: center;
+      text-shadow: 1px 1px 10px #1e90ff;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #dcdcdc;
+      text-align: center;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .car-image {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s;
+    }
+
+    .car-image:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #161b22;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #ccc;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      color: #ff4500;
+    }
+
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4500;
+      color: white;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: background 0.3s ease;
+    }
+
+    .scroll-top:hover {
+      background: #1e90ff;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .car-image {
+        width: 90%;
+        height: auto;
+      }
+
+      section {
+        margin: 2rem 1rem;
+      } 
+    }
+	.sound-btn {
+  background: #1e90ff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
+.sound-btn:hover {
+  background: #ff4500;
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Toyota Supra MK4</h1>
+  </header>
+
+  <section>
+    <h2>Die Legende der Straße</h2>
+    <div class="image-container">
+      <img src="Supra MK4 1.jpg" alt="Supra MK4 Frontansicht" class="car-image" />
+      <img src="Supra MK4 2.jpg" alt="Supra MK4 Heckansicht" class="car-image" />
+    </div>
+    <p>Der Toyota Supra MK4 ist ein echter Klassiker. Mit seinem 2JZ-GTE-Motor, seinem markanten Design und seinem Ruf in der Tuning-Szene bleibt er ein echter Traumwagen.</p>
+  </section>
+
+  <section>
+    <h2>Geschichte des Supra MK4</h2>
+    <p>Produziert von 1993 bis 2002, brachte der Supra MK4 eine neue Ära des Performance-Tunings und wurde mit seinem 2JZ-Motor schnell zu einem der bekanntesten Modelle der Autoindustrie.</p>
+  </section>
+
+  <section>
+    <h2>Technische Daten</h2>
+    <p>Motor: 2JZ-GTE (3.0L Twin-Turbo Inline-6) <br>
+       Leistung: ca. 280 PS (stock) <br>
+       0–100 km/h: ca. 4,6 Sekunden <br>
+       Topspeed: über 280 km/h</p>
+  </section>
+  
+  <section>
+  <h2>2JZ-GTE Live Sound</h2>
+  <p>Erlebe den unverwechselbaren Klang des Supra MK4!</p>
+  <button class="sound-btn" onclick="document.getElementById('supra-sound').play()">🎧 Abspielen</button>
+  <audio id="supra-sound" src="supra-sound.MP3"></audio>
+</section>
+
+  <footer>
+    <p>Created with ❤️ for all Supra Fans.<br>
+      <a href="#top">Zurück nach oben</a>
+    </p>
+  </footer>
+
+  <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑ Top</button>
+
+</body>
+</html>

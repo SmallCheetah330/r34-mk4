@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Supra MK4 Galerie</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #0d1117;
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1e90ff, #ff4500);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .gallery-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .gallery-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+
+    .gallery-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(255, 69, 0, 0.6), 0 0 20px rgba(30, 144, 255, 0.4);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #161b22;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    footer a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ff4500;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Supra MK4 Galerie</h1>
+  </header>
+
+  <div class="gallery-container">
+    <img src="Supra MK4 1.jpg" alt="Supra MK4 Bild 1" />
+    <img src="Supra MK4 2.jpg" alt="Supra MK4 Bild 2" />
+    <img src="Supra MK4 3.jpg" alt="Supra MK4 Bild 3" />
+    <img src="Supra MK4 4.jpg" alt="Supra MK4 Bild 4" />
+    <img src="Supra MK4 5.jpg" alt="Supra MK4 Bild 5" />
+    <img src="Supra MK4 6.jpg" alt="Supra MK4 Bild 6" />
+    <img src="Supra MK4 7.jpg" alt="Supra MK4 Bild 7" />
+    <img src="Supra MK4 8.jpg" alt="Supra MK4 Bild 8" />
+    <img src="Supra MK4 9.jpg" alt="Supra MK4 Bild 9" />
+  </div>
+
+  <footer>
+    <p>Created with ❤️ for all MK4 lovers</p>
+  </footer>
+</body>
+</html>
